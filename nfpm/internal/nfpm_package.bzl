@@ -51,7 +51,7 @@ nfpm_package = rule(
         ),
         "_nfpm": attr.label(
             default = "//go/v2/cmd/nfpmwrapper",
-            cfg = "host",
+            cfg = "exec",
             executable = True,
         ),
     },

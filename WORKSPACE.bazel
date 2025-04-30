@@ -19,6 +19,7 @@ rules_nfpm_go_dependencies()
 #
 
 load("//nfpm/internal:repositories.bzl", "rules_nfpm_internal_dependencies")
+
 rules_nfpm_internal_dependencies()
 
 # ----------------------------------------------------------------------
@@ -48,8 +49,8 @@ rules_jvm_external_setup()
 load("@io_bazel_stardoc//:deps.bzl", "stardoc_external_deps")
 
 stardoc_external_deps()
- 
+
 load("@stardoc_maven//:defs.bzl", stardoc_pinned_maven_install = "pinned_maven_install")
- 
+
 stardoc_pinned_maven_install()
 # ----------------------------------------------------------------------
